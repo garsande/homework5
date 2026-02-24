@@ -1,7 +1,6 @@
 ########################
 # Calculator Class      #
 ########################
-
 from decimal import Decimal
 import logging
 import os
@@ -18,7 +17,6 @@ from app.history import HistoryObserver
 from app.input_validators import InputValidator
 from app.operations import Operation
 
-# Type aliases for better readability
 Number = Union[int, float, Decimal]
 CalculationResult = Union[Number, str]
 
