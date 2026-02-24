@@ -1,7 +1,6 @@
 ########################
 # History Management    #
 ########################
-
 from abc import ABC, abstractmethod
 import logging
 from typing import Any
@@ -22,16 +21,13 @@ class HistoryObserver(ABC):
         """
         Handle new calculation event.
 
-        Args:
-            calculation (Calculation): The calculation that was performed.
+        Args: calculation (Calculation): The calculation that was performed.
         """
         pass  # pragma: no cover
 
 
 class LoggingObserver(HistoryObserver):
     """
-    Observer that logs calculations to a file.
-
     Implements the Observer pattern by listening for new calculations and logging
     their details to a log file.
     """
@@ -86,8 +82,7 @@ class AutoSaveObserver(HistoryObserver):
         This method is called whenever a new calculation is performed. If the
         auto-save feature is enabled, it saves the current calculation history.
 
-        Args:
-            calculation (Calculation): The calculation that was performed.
+        Args:  calculation (Calculation): The calculation that was performed.
         """
         if calculation is None:
             raise AttributeError("Calculation cannot be None")

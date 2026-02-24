@@ -23,9 +23,9 @@ class Calculation:
     """
 
     # Required fields
-    operation: str          # The name of the operation (e.g., "Addition")
-    operand1: Decimal       # The first operand in the calculation
-    operand2: Decimal       # The second operand in the calculation
+    operation: str          # The name of the operation 
+    operand1: Decimal       # The first operand
+    operand2: Decimal       # The second operand
 
     # Fields with default values
     result: Decimal = field(init=False)  # The result of the calculation, computed post-initialization

@@ -29,4 +29,5 @@ jobs:
 
       - name: Run tests with pytest and enforce 70% coverage
         run: |
+          export PYTHONPATH=$PYTHONPATH:.
           pytest --cov=app --cov-fail-under=70
